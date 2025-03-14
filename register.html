@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- start header -->
+     <div class="login">
+        <div class="image">
+            <img src="images/log in.jpg" alt="">
+        </div>
+        <div class="register">
+            <h3>تسجيل دخول</h3>
+            <form action="">
+                <input type="text" placeholder="اسم المسخدم">
+                <input type="password" placeholder="كلمة المرور">
+                <p>نسيت <span>كلمة المرور؟</span></p>
+                <button type="submit" id="loginBtn" class="log">تسجيل الدخول</button>
+                <p>ليس لديك حساب؟ <span><a href="#" id="openRegisterLink">حساب جديد</a></span></p>
+            </form>
+            <div id="registerModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>إنشاء حساب جديد</h2>
+                    <form>
+                        <input type="text" id="name" required placeholder="الاسم كامل">
+            
+                        <input type="email" id="email" required placeholder="البريد الالكتروني">
+            
+                        <input type="password" id="password" required placeholder="كلمة المرور">
+            
+                        <input type="password" id="confirm-password" required placeholder="تأكيد كلمة المرور">
+                        <button type="button" id="openRegister" class="openRegister">إنشاء حساب</button>
+
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+     </div>
+
+        <script src="script.js"></script>
+     </body>
+</html>
+     <!-- end header -->
